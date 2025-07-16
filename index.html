@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ster van het Verhaal - Gepersonaliseerde Kinderboeken</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'warm-yellow': '#FEF3C7',
+                        'soft-pink': '#FCE7F3',
+                        'light-blue': '#DBEAFE',
+                        'mint-green': '#D1FAE5',
+                        'lavender': '#EDE9FE',
+                        'peach': '#FED7AA'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-warm-yellow to-soft-pink min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm shadow-lg z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-star text-2xl text-yellow-500"></i>
+                    <h1 class="text-2xl font-bold text-gray-800">Ster van het Verhaal</h1>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="text-gray-700 hover:text-yellow-600 transition-colors">Home</a>
+                    <a href="#aanbod" class="text-gray-700 hover:text-yellow-600 transition-colors">Aanbod</a>
+                    <a href="#voorbeelden" class="text-gray-700 hover:text-yellow-600 transition-colors">Voorbeelden</a>
+                    <a href="#over-mij" class="text-gray-700 hover:text-yellow-600 transition-colors">Over Mij</a>
+                    <a href="#bestellen" class="text-gray-700 hover:text-yellow-600 transition-colors">Bestellen</a>
+                </div>
+                <div class="md:hidden">
+                    <i class="fas fa-bars text-gray-700"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 px-6">
+        <div class="container mx-auto text-center">
+            <div class="max-w-4xl mx-auto">
+                <div class="mb-8">
+                    <i class="fas fa-book-open text-6xl text-yellow-500 mb-6"></i>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
+                    Een boek met jouw kinderen in de hoofdrol
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+                    Maak van jouw kinderen de helden van hun eigen avontuur met unieke, gepersonaliseerde verhalen die hen doen stralen
+                </p>
+                <a href="#aanbod" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors shadow-lg hover:shadow-xl">
+                    Bekijk Opties
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aanbod Section -->
+    <section id="aanbod" class="py-20 px-6 bg-white/50">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Ons Aanbod</h2>
+                <p class="text-xl text-gray-600">Kies de optie die het beste bij jouw wensen past</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Volledig boek -->
+                <div class="bg-gradient-to-br from-light-blue to-mint-green rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-book text-4xl text-blue-600 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Volledig Boek</h3>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Een compleet gepersonaliseerd verhaal van 20-30 pagina's met jouw kind(eren) als hoofdpersoon. Inclusief unieke illustraties en een verhaal op maat.
+                    </p>
+                    <div class="space-y-2 mb-6">
+                        <p class="text-sm text-gray-600"><i class="fas fa-clock mr-2"></i>Levertijd: 3-4 weken</p>
+                        <p class="text-sm text-gray-600"><i class="fas fa-palette mr-2"></i>Inclusief illustraties</p>
+                        <p class="text-sm text-gray-600"><i class="fas fa-heart mr-2"></i>Volledig gepersonaliseerd</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-2xl font-bold text-blue-600">€45 - €65</p>
+                        <p class="text-sm text-gray-500">Afhankelijk van complexiteit</p>
+                    </div>
+                </div>
+
+                <!-- Standaardverhaal met naam -->
+                <div class="bg-gradient-to-br from-soft-pink to-lavender rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-edit text-4xl text-pink-600 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Standaardverhaal met Naam</h3>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Een bestaand verhaal waarin de naam van jouw kind wordt verwerkt. Mooie illustraties en een verhaal dat altijd werkt.
+                    </p>
+                    <div class="space-y-2 mb-6">
+                        <p class="text-sm text-gray-600"><i class="fas fa-clock mr-2"></i>Levertijd: 1-2 weken</p>
+                        <p class="text-sm text-gray-600"><i class="fas fa-user mr-2"></i>Naam personalisatie</p>
+                        <p class="text-sm text-gray-600"><i class="fas fa-images mr-2"></i>Standaard illustraties</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-2xl font-bold text-pink-600">€25 - €35</p>
+                        <p class="text-sm text-gray-500">Snel en betaalbaar</p>
+                    </div>
+                </div>
+
+                <!-- Alleen cover -->
+                <div class="bg-gradient-to-br from-warm-yellow to-peach rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-image text-4xl text-orange-600 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Alleen Cover</h3>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Een prachtige, gepersonaliseerde cover voor een bestaand boek of als artwork voor de kinderkamer. Perfect als cadeau.
+                    </p>
+                    <div class="space-y-2 mb-6">
+                        <p class="text-sm text-gray-600"><i class="fas fa-clock mr-2"></i>Levertijd: 3-5 dagen</p>
+                        <p class="text-sm text-gray-600"><i class="fas fa-print mr-2"></i>Digitaal + print optie</p>
+                        <p class="text-sm text-gray-600"><i class="fas fa-gift mr-2"></i>Perfect cadeau</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-2xl font-bold text-orange-600">€15 - €25</p>
+                        <p class="text-sm text-gray-500">Snel en simpel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Voorbeelden Section -->
+    <section id="voorbeelden" class="py-20 px-6">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Voorbeelden</h2>
+                <p class="text-xl text-gray-600">Bekijk enkele voorbeelden van onze mooie illustraties</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Placeholder images -->
+                <div class="bg-gradient-to-br from-light-blue to-mint-green rounded-3xl p-6 shadow-lg">
+                    <div class="aspect-square bg-white/50 rounded-2xl flex items-center justify-center mb-4">
+                        <div class="text-center">
+                            <i class="fas fa-child text-6xl text-blue-500 mb-4"></i>
+                            <p class="text-gray-600 font-semibold">Avontuurlijke Held</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-700 text-center">Een moedig kind op avontuur in een magisch bos</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-soft-pink to-lavender rounded-3xl p-6 shadow-lg">
+                    <div class="aspect-square bg-white/50 rounded-2xl flex items-center justify-center mb-4">
+                        <div class="text-center">
+                            <i class="fas fa-castle text-6xl text-pink-500 mb-4"></i>
+                            <p class="text-gray-600 font-semibold">Prinses Verhaal</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-700 text-center">Een prinsesje in haar eigen kasteel vol wonderen</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-warm-yellow to-peach rounded-3xl p-6 shadow-lg">
+                    <div class="aspect-square bg-white/50 rounded-2xl flex items-center justify-center mb-4">
+                        <div class="text-center">
+                            <i class="fas fa-rocket text-6xl text-orange-500 mb-4"></i>
+                            <p class="text-gray-600 font-semibold">Ruimte Avontuur</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-700 text-center">Een spannende reis naar de sterren en planeten</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-mint-green to-light-blue rounded-3xl p-6 shadow-lg">
+                    <div class="aspect-square bg-white/50 rounded-2xl flex items-center justify-center mb-4">
+                        <div class="text-center">
+                            <i class="fas fa-paw text-6xl text-green-500 mb-4"></i>
+                            <p class="text-gray-600 font-semibold">Dierenvriend</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-700 text-center">Vriendschap met alle dieren in het bos</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-lavender to-soft-pink rounded-3xl p-6 shadow-lg">
+                    <div class="aspect-square bg-white/50 rounded-2xl flex items-center justify-center mb-4">
+                        <div class="text-center">
+                            <i class="fas fa-magic text-6xl text-purple-500 mb-4"></i>
+                            <p class="text-gray-600 font-semibold">Magisch Verhaal</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-700 text-center">Tovenaars en sprookjes vol magie</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-peach to-warm-yellow rounded-3xl p-6 shadow-lg">
+                    <div class="aspect-square bg-white/50 rounded-2xl flex items-center justify-center mb-4">
+                        <div class="text-center">
+                            <i class="fas fa-ship text-6xl text-yellow-600 mb-4"></i>
+                            <p class="text-gray-600 font-semibold">Piraten Avontuur</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-700 text-center">Op zoek naar schatten op de grote oceaan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Over Mij Section -->
+    <section id="over-mij" class="py-20 px-6 bg-white/50">
+        <div class="container mx-auto">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold text-gray-800 mb-8">Over Mij</h2>
+                <div class="bg-gradient-to-br from-mint-green to-light-blue rounded-3xl p-8 md:p-12 shadow-lg">
+                    <div class="mb-8">
+                        <i class="fas fa-heart text-5xl text-red-500 mb-6"></i>
+                    </div>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        Ster van het Verhaal is ontstaan uit liefde voor mijn eigen kinderen. Toen ik voor hen een gepersonaliseerd boek maakte, zag ik hoe hun ogen begonnen te stralen toen ze zichzelf in het verhaal herkenden.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        Wat begon als een eenmalig cadeau voor mijn eigen gezin, groeide uit tot een passieproject. Ik geloof dat elk kind de hoofdrol verdient in zijn eigen verhaal, en dat is precies wat ik probeer te creëren.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Dit is meer dan een hobby voor mij – het is een manier om kinderen te laten voelen hoe bijzonder ze zijn. Elk boek wordt met zorg en aandacht gemaakt, omdat elk kind uniek is en een uniek verhaal verdient.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bestellen Section -->
+    <section id="bestellen" class="py-20 px-6">
+        <div class="container mx-auto">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold text-gray-800 mb-8">Bestellen</h2>
+                <div class="bg-gradient-to-br from-warm-yellow to-peach rounded-3xl p-8 md:p-12 shadow-lg">
+                    <div class="mb-8">
+                        <i class="fas fa-envelope text-5xl text-blue-600 mb-6"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Klaar om te beginnen?</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                        Stuur mij een e-mail met je wensen en ik neem zo snel mogelijk contact met je op. Vertel me over je kind(eren), welke optie je wilt, en eventuele speciale wensen voor het verhaal.
+                    </p>
+                    <div class="space-y-4 mb-8">
+                        <p class="text-gray-700">
+                            <i class="fas fa-user mr-2 text-blue-600"></i>
+                            Naam en leeftijd van het kind
+                        </p>
+                        <p class="text-gray-700">
+                            <i class="fas fa-list mr-2 text-blue-600"></i>
+                            Gewenste optie (volledig boek, standaard, of cover)
+                        </p>
+                        <p class="text-gray-700">
+                            <i class="fas fa-lightbulb mr-2 text-blue-600"></i>
+                            Speciale wensen of thema's
+                        </p>
+                    </div>
+                    <a href="mailto:info@sterverhaal.nl" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors shadow-lg hover:shadow-xl">
+                        <i class="fas fa-envelope mr-2"></i>
+                        Stuur een e-mail naar info@sterverhaal.nl
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 px-6">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-star text-2xl text-yellow-500"></i>
+                        <h3 class="text-xl font-bold">Ster van het Verhaal</h3>
+                    </div>
+                    <p class="text-gray-400">
+                        Gepersonaliseerde kinderboeken die elk kind laten stralen als de ster van hun eigen verhaal.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <p class="text-gray-400 mb-2">
+                        <i class="fas fa-envelope mr-2"></i>
+                        info@sterverhaal.nl
+                    </p>
+                    <p class="text-gray-400">
+                        <i class="fas fa-clock mr-2"></i>
+                        Reactie binnen 24 uur
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Volg Ons</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-pinterest text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2025 Ster van het Verhaal. Alle rechten voorbehouden.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
