@@ -28,6 +28,7 @@ Preferred communication style: Simple, everyday language.
 - **Fixed Navigation**: Sticky header with backdrop blur effect
 - **Responsive Menu**: Hidden mobile menu (hamburger icon visible on mobile)
 - **Smooth Scrolling**: CSS-based smooth scroll behavior for anchor links
+- **Navigation Sections**: Home, Aanbod, Voorbeelden, Over Mij, Wachtlijst, FAQ
 
 ### 2. Color Scheme
 - **Custom Tailwind Colors**: Extended color palette with warm, child-friendly colors
@@ -80,6 +81,14 @@ Preferred communication style: Simple, everyday language.
 - **Minimal JavaScript**: Lightweight approach with vanilla JS
 - **Responsive Design**: Mobile-optimized for various screen sizes
 - **SEO Ready**: Semantic HTML structure with proper meta tags
+
+## Recent Changes
+
+### January 2025 Updates
+- **Wachtlijst System**: Replaced ordering section with waiting list concept
+- **FAQ Section**: Added interactive collapsible FAQ section with detailed answers
+- **Content Updates**: Removed page count specification from full book offering
+- **Navigation**: Updated navigation menu to include Wachtlijst and FAQ sections
 
 ### Future Expansion Possibilities
 - **Backend Integration**: Could be extended with contact forms, booking systems
