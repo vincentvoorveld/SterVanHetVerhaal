@@ -89,6 +89,11 @@ Preferred communication style: Simple, everyday language.
 - **FAQ Section**: Added interactive collapsible FAQ section with detailed answers
 - **Content Updates**: Removed page count specification from full book offering
 - **Navigation**: Updated navigation menu to include Wachtlijst and FAQ sections
+- **Book Examples**: Added real book cover images (Elle en Eve, Tom/Isa/Phoebe, Mama Prinses)
+- **Messaging Updates**: Removed "handmade" references, focused on capacity limitations
+- **FAQ Expansion**: Added 11 new FAQ questions grouped into 4 categories (Algemene Informatie, Bestelling & Levering, Wijzigingen & Service, Speciale Gelegenheden)
+- **Email Integration**: Updated waitlist button to link to hoi@stervanhetverhaal with proper subject line
+- **Content Cleanup**: Removed "Bekijk enkele voorbeelden van onze mooie illustraties" text from examples section
 
 ### Future Expansion Possibilities
 - **Backend Integration**: Could be extended with contact forms, booking systems
