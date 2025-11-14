@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ster van het Verhaal - Gepersonaliseerde Kinderboeken</title>
+    <meta name="description" content="Eenvoudige en overzichtelijke website met duidelijke informatie, snelle laadtijd en een minimalistische vormgeving.">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="canonical" href="https://stervanhetverhaal.nl/">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
@@ -47,7 +50,7 @@
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-2">
                     <i class="fas fa-star text-2xl text-yellow-500"></i>
-                    <h1 class="text-2xl font-bold text-gray-800">Ster van het Verhaal</h1>
+                    <div class="text-2xl font-bold text-gray-800">Ster van het Verhaal</div>
                 </div>
                 <div class="hidden md:flex space-x-6">
                     <a href="#home" class="text-gray-700 hover:text-yellow-600 transition-colors">Home</a>
@@ -234,6 +237,34 @@
                         Dit is meer dan een hobby voor mij – het is een manier om kinderen te laten voelen hoe bijzonder ze zijn. Elk boek wordt met zorg en aandacht gemaakt, omdat elk kind uniek is en een uniek verhaal verdient.
                     </p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Sharing Section -->
+    <section class="py-12 px-6 bg-white/30">
+        <div class="container mx-auto">
+            <div class="max-w-4xl mx-auto text-center">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Deel deze pagina</h3>
+                <div class="flex justify-center gap-4 flex-wrap">
+                    <a href="https://wa.me/?text=Bekijk%20Ster%20van%20het%20Verhaal%20-%20Gepersonaliseerde%20Kinderboeken%20https://stervanhetverhaal.nl" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full transition-colors shadow-md">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://stervanhetverhaal.nl" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full transition-colors shadow-md">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://twitter.com/intent/tweet?url=https://stervanhetverhaal.nl&text=Bekijk%20Ster%20van%20het%20Verhaal%20-%20Gepersonaliseerde%20Kinderboeken" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-black hover:bg-gray-800 text-white px-6 py-3 rounded-full transition-colors shadow-md">
+                        <i class="fab fa-x-twitter"></i>
+                        <span>X</span>
+                    </a>
+                    <button onclick="copyToClipboard()" class="inline-flex items-center gap-2 bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-full transition-colors shadow-md">
+                        <i class="fas fa-link"></i>
+                        <span>Link kopiëren</span>
+                    </button>
+                </div>
+                <p id="copy-message" class="text-sm text-green-600 mt-3 hidden">Link gekopieerd!</p>
             </div>
         </div>
     </section>
@@ -584,6 +615,18 @@
                 });
             }
         });
+
+        // Copy to clipboard functionality
+        function copyToClipboard() {
+            const url = window.location.href;
+            navigator.clipboard.writeText(url).then(function() {
+                const message = document.getElementById('copy-message');
+                message.classList.remove('hidden');
+                setTimeout(function() {
+                    message.classList.add('hidden');
+                }, 3000);
+            });
+        }
     </script>
 </body>
 </html>
